@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Note from './components/Note';
-import './App.scss';
+import './styles/App.scss';
 
 class App extends Component {
   constructor(props) {
@@ -34,21 +34,39 @@ class App extends Component {
   }
   render() {
     let notes = this.state.notes.map((val, key) => {
-      return <Note key={key} text={val}
-              deleteMethod={ () => this.deleteNote(key) } />
+      return (
+        <li>
+          <Note key={key} text={val}
+          deleteMethod={ () => this.deleteNote(key) } />
+        </li>
+      )
     })
     return (
-      <div className="container">
-        <div className="header">To-Do List</div>
-        {notes}
-        <div className="btn" onClick={this.addNote.bind(this)}>+</div>
-        <input type="text"
-          ref={((input) => {this.textInput = input})}
-          className="textInput"
-          value={this.state.noteText}
-          onChange={noteText => this.updateNoteText(noteText)}
-          onKeyPress={this.handleKeyPress.bind(this)}
-        />
+      <div>
+        <div className="section">
+          <div className="container">
+            <div className="add">
+              <input type="text"
+                ref={((input) => {this.textInput = input})}
+                className="textInput"
+                value={this.state.noteText}
+                onChange={noteText => this.updateNoteText(noteText)}
+                onKeyPress={this.handleKeyPress.bind(this)}
+                />
+              <div className="btn" onClick={this.addNote.bind(this)}>+</div>
+            </div>
+            <div className="desc">Note: Add a Task</div>
+          </div>
+        </div>
+        <div className="section">
+          <div className="container">
+            <div className="header">To-Do List</div>
+            <ol className="list">
+              {notes}
+            </ol>
+            <div className="desc">Note: Click to Delete</div>
+          </div>
+        </div>
       </div>
     );
   }

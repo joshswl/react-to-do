@@ -1,4 +1,11 @@
+$m-gutter: 1rem;
+
 @import 'reset';
+@import 'note';
+
+.section {
+  padding: $m-gutter;
+}
 
 .container {
   margin: auto;
@@ -6,9 +13,38 @@
 }
 
 .header {
+  font-family: 'Pacifico', cursive;
   font-size: 40px;
+  padding: $m-gutter;
+  text-align: center;
+}
+
+.add {
+  display: flex;
+  justify-content: center;
+}
+
+.textInput {
+  font-size: 20px;
+  padding: $m-gutter;
+  width: 100%;
 }
 
 .btn {
   border: 2px solid black;
+  cursor: pointer;
+  font-size: 20px;
+  padding: $m-gutter;
+}
+
+.desc {
+  font-style: italic;
+  padding: $m-gutter / 2;
+  text-align: center;
+}
+
+.list {
+  border: 1px solid black;
+  margin: 0;
+  text-align: center;
 }
