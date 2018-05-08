@@ -1710,6 +1710,7 @@ cross-spawn@5.1.0, cross-spawn@^5.0.1, cross-spawn@^5.1.0:
 cross-spawn@^3.0.0:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/cross-spawn/-/cross-spawn-3.0.1.tgz#1256037ecb9f0c5f79e3d6ef135e30770184b982"
+<<<<<<< HEAD
   dependencies:
     lru-cache "^4.0.1"
     which "^1.2.9"
@@ -1718,6 +1719,16 @@ cryptiles@2.x.x:
   version "2.0.5"
   resolved "https://registry.yarnpkg.com/cryptiles/-/cryptiles-2.0.5.tgz#3bdfecdc608147c1c67202fa291e7dca59eaa3b8"
   dependencies:
+=======
+  dependencies:
+    lru-cache "^4.0.1"
+    which "^1.2.9"
+
+cryptiles@2.x.x:
+  version "2.0.5"
+  resolved "https://registry.yarnpkg.com/cryptiles/-/cryptiles-2.0.5.tgz#3bdfecdc608147c1c67202fa291e7dca59eaa3b8"
+  dependencies:
+>>>>>>> 41cd4cf071b457fe8b97c658084e22a283adac83
     boom "2.x.x"
 
 crypto-browserify@^3.11.0:
@@ -7114,6 +7125,7 @@ webpack-sources@^1.0.1:
     source-list-map "^2.0.0"
     source-map "~0.6.1"
 
+<<<<<<< HEAD
 webpack@3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/webpack/-/webpack-3.0.0.tgz#ee9bcebf21247f7153cb410168cab45e3a59d4d7"
@@ -7142,6 +7154,9 @@ webpack@3.0.0:
     yargs "^6.0.0"
 
 webpack@3.8.1:
+=======
+webpack@3.8.1, webpack@^3.0.0:
+>>>>>>> 41cd4cf071b457fe8b97c658084e22a283adac83
   version "3.8.1"
   resolved "https://registry.yarnpkg.com/webpack/-/webpack-3.8.1.tgz#b16968a81100abe61608b0153c9159ef8bb2bd83"
   dependencies:

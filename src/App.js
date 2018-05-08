@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import Note from './components/Note';
+<<<<<<< HEAD
 import './App.scss';
+=======
+import './styles/App.scss';
+>>>>>>> 41cd4cf071b457fe8b97c658084e22a283adac83
 
 class App extends Component {
   constructor(props) {

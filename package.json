@@ -39,7 +39,10 @@
     "style-loader": "0.19.0",
     "sw-precache-webpack-plugin": "0.11.4",
     "url-loader": "0.6.2",
+<<<<<<< HEAD
     "webpack": "3.8.1",
+=======
+>>>>>>> 41cd4cf071b457fe8b97c658084e22a283adac83
     "webpack-dev-server": "2.9.4",
     "webpack-manifest-plugin": "1.3.2",
     "whatwg-fetch": "2.0.3"
@@ -52,7 +55,11 @@
   "devDependencies": {
     "node-sass": "^4.9.0",
     "sass-loader": "^7.0.1",
+<<<<<<< HEAD
     "webpack": "3.0.0"
+=======
+    "webpack": "^3.8.1"
+>>>>>>> 41cd4cf071b457fe8b97c658084e22a283adac83
   },
   "jest": {
     "collectCoverageFrom": [
